@@ -1,0 +1,6 @@
+<div class="book-item" *ngFor="let book of books">
+  <p>{{ book }}</p>
+  <button (click)="remove.emit(book)" data-test="remove-button">
+    Remove from Collection
+  </button>
+</div>
